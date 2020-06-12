@@ -28,6 +28,13 @@ h2
     line-height: 43px
     color: $black
 
+h3
+    font-weight: bold
+    +rfs(18)
+    line-height: 22px
+    text-align: center
+    color: $black
+
 
 /* main screen */
 
@@ -155,3 +162,49 @@ select
         position: absolute
         top: 40%
         left: -34px
+
+
+/* features screen */
+
+.features
+    margin-bottom: 124px
+
+    &__item
+        width: 293px
+        height: 198px
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+        border-radius: 8px
+        position: relative
+        background-color: $white
+        z-index: 2
+        margin-top: 220px
+
+    &__heading
+        width: 229px
+        margin: 0 auto
+        padding-top: 33px
+
+    &__desc
+        width: 229px
+        margin: 20px auto 30px auto
+        color: $black
+        +rfs(12)
+
+    &__image
+        z-index: 1
+
+    &__img
+        position: absolute
+        left: -14px
+        right: 0
+        top: 65px
+        text-align: center
+        width: 350px
+        height: 250px
+
+
+
+
+
+
+
