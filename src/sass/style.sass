@@ -16,18 +16,23 @@ body
 
 h1
     font-family: Lato
-    font-style: normal
     font-weight: bold
     +rfs(72)
     line-height: 86px
     letter-spacing: 0.05em
     text-transform: uppercase
 
+h2
+    font-weight: bold
+    +rfs(36)
+    line-height: 43px
+    color: $black
+
 
 /* main screen */
 
 .main
-    padding: 55px 0 187px 0
+    padding: 75px 0 187px 0
     background: url('../img/MainBG.png') no-repeat center top / cover
 
 .logo
@@ -116,3 +121,37 @@ select
 
         &:hover
             text-decoration: none
+
+
+/* preview screen */
+
+.preview
+    margin: 95px 0
+
+    &__info
+        margin-top: 55px
+        width: 445px
+
+    &__title
+        margin-bottom: 35px
+
+    &__desc
+        color: $black
+        font-weight: normal
+        +rfs(14)
+        line-height: 140%
+        margin-bottom: 30px
+
+    &__link
+        color: $accent-red
+
+    &__video
+        position: relative
+        border-radius: 5px
+        height: 100%
+        width: 100%
+
+    &__play
+        position: absolute
+        top: 40%
+        left: -34px
