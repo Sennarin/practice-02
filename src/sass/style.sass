@@ -11,13 +11,108 @@ $accent-red: #D52047
 
 body
    font-family: 'Lato', sans-serif
-   font-size: 14px
+   +rfs(14)
+   color: $white
 
 h1
     font-family: Lato
     font-style: normal
     font-weight: bold
-    font-size: 72px
+    +rfs(72)
     line-height: 86px
     letter-spacing: 0.05em
     text-transform: uppercase
+
+
+/* main screen */
+
+.main
+    padding: 55px 0 187px 0
+    background: url('../img/MainBG.png') no-repeat center top / cover
+
+.logo
+
+    &__img
+
+    &__name
+        font-style: normal
+        font-weight: bold
+        +rfs(18)
+        line-height: 22px
+        align-items: center
+        text-transform: uppercase
+        margin: auto 0 auto 7px
+
+.nav
+    align-items: center
+
+    &__link
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        +rfs(14)
+        line-height: 17px
+        text-transform: uppercase
+        margin: 5px 16px auto 1px
+        color: $white
+        box-sizing: border-box
+
+        &:hover
+            text-decoration: none
+            font-weight: bold
+            color: $white
+
+select
+    background: transparent
+    outline: none
+    border: none
+    text-decoration: none
+    color: $white
+    width: 50px
+
+.selector
+    &__img
+        margin-right: 11px
+        width: 40px
+        height: 40px
+
+    &__ghost
+        width: 100px
+        height: 40px
+        background: transparent
+        border: 1px solid $white
+        border-radius: 6px
+        color: $white
+        text-transform: uppercase
+        margin-left: 25px
+
+        &:hover
+            text-decoration: none
+        &:active
+            text-decoration: none
+
+.offer
+    margin-top: 140px
+
+    &__title
+        margin-bottom: 39px
+    &__desc
+        width: 450px
+        margin: 0 auto
+        font-style: normal
+        +rfs(24)
+        line-height: 150%
+        text-align: center
+
+    &__cta
+        width: 160px
+        height: 50px
+        background: $white
+        border-radius: 6px
+        color: $accent-red
+        text-transform: uppercase
+        margin-left: 25px
+        margin-top: 39px
+
+        &:hover
+            text-decoration: none
